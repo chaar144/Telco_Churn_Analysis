@@ -24,9 +24,9 @@ library("readxl")
 rm(list = ls()) # clear all environment variable
 graphics.off()  # close all plot
 
-telco <- read_csv("C:/Users/chaar/Desktop/Statistical learning/SLP/Data/Telco_Customer_Churn.csv")
+telco <- read_csv("/path/Telco_Customer_Churn.csv")
 str(telco)
-telco1 <- read_excel("C:/Users/chaar/Desktop/Statistical learning/SLP/Data/Telco.xlsx")
+telco1 <- read_excel("path/Telco.xlsx")
 
 myvars<-names(telco1) %in% c("customerID","CLTV","ChurnScore","")
 telco1<-telco1[myvars]
